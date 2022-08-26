@@ -1,6 +1,10 @@
 ---
 import menu from '../Helpers/menu.js';
 
+const path = import.meta.env.PROD
+  ? `${import.meta.env.SITE}${import.meta.env.BASE_URL}`
+  : `${import.meta.env.BASE_URL}`;
+
 export interface Props {
   page: string;
 }
@@ -9,11 +13,8 @@ const { page } = Astro.props as Props;
 ---
 
 <header class="main-header" id="main-header">
-  <a href="/">
-    <img
-      src="https://tinonavarrodiaz.github.io/boilerplate-2022/img/logo.svg"
-      alt="Logo"
-    />
+  <a href={path}>
+    <img src={`${path}/img/logo.svg`} alt="Logo" />
   </a>
   <nav>
     <button class="hamburger hamburger--collapse toggle-menu" type="button">
@@ -27,7 +28,7 @@ const { page } = Astro.props as Props;
           <li
             class={`main-menu__item ${page === link.title ? 'selected' : ''}`}
           >
-            <a class="main-menu__link" href={link.url}>
+            <a class="main-menu__link" href={`${path}${link.url}`}>
               {link.title}
             </a>
           </li>

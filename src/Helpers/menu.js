@@ -1,19 +1,19 @@
 const menu = [
   {
     title: 'inicio',
-    url: 'https://tinonavarrodiaz.github.io/boilerplate-2022/',
+    url: '/',
   },
   {
     title: 'nosotros',
-    url: 'https://tinonavarrodiaz.github.io/boilerplate-2022/nosotros',
+    url: 'nosotros',
   },
   {
     title: 'servicios',
-    url: 'https://tinonavarrodiaz.github.io/boilerplate-2022/servicios',
+    url: 'servicios',
   },
   {
     title: 'contacto',
-    url: 'https://tinonavarrodiaz.github.io/boilerplate-2022/contacto',
+    url: 'contacto',
   },
 ];
 
