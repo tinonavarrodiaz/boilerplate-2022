@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), sitemap()],
-  site: 'tinonavarrodiaz.github.io',
+  site: 'https://tinonavarrodiaz.github.io',
   base: 'boilerplate-2022',
 });
