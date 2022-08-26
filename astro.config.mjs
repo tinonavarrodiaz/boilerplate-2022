@@ -7,5 +7,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [react(), sitemap()],
   site: 'https://tinonavarrodiaz.github.io',
-  base: 'boilerplate-2022',
+  base: '/boilerplate-2022',
 });
